@@ -1,0 +1,147 @@
+.dashboard__main {
+  min-height: 70vh;
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.dashboard__container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.dashboard__welcome {
+  margin-bottom: 48px;
+}
+
+.dashboard__welcome > span {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard__welcome h1 {
+  margin: 12px 0;
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.dashboard__welcome p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.dashboard-card__icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border-radius: 14px;
+  background: #f3f4f6;
+}
+
+.dashboard-card h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.dashboard-card p {
+  margin: 0 0 24px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.dashboard-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.dashboard__profile {
+  margin-top: 20px;
+  padding: 32px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+
+  background: #ffffff;
+}
+
+.dashboard__profile > div:first-child > span {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.dashboard__profile h2 {
+  margin: 10px 0 28px;
+  font-size: 28px;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profile-info div {
+  padding: 20px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.profile-info span {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.profile-info strong {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .dashboard__main {
+    padding: 60px 0;
+  }
+
+  .dashboard__container {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .dashboard__grid,
+  .profile-info {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card,
+  .dashboard__profile {
+    padding: 24px;
+  }
+}
